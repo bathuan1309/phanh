@@ -4,9 +4,9 @@ const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a'
 const header = document.querySelector('.header.container');
 
 hamburger.addEventListener('click', () => {
-	swal("aaa", "a", "as");
 	hamburger.classList.toggle('active');
 	mobile_menu.classList.toggle('active');
+	swal("aaa");
 });
 
 document.addEventListener('scroll', () => {
@@ -20,6 +20,7 @@ document.addEventListener('scroll', () => {
 
 menu_item.forEach((item) => {
 	item.addEventListener('click', () => {
+		swal("bbb");
 		hamburger.classList.toggle('active');
 		mobile_menu.classList.toggle('active');
 	});
