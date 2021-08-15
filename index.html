@@ -44,7 +44,7 @@
         <h1>My Name is <span></span></h1>
         <h1>Vũ Thị Phương Anh<span></span></h1>
         <a href="#projects" type="button" class="cta">Portfolio</a>
-        <button onclick="thuan();">Thuan</button>
+        <p id="demo" onclick="myFunction()">Click me to change my text color.</p>
       </div>
     </div>
   </section>
@@ -245,12 +245,12 @@
   <!-- End Footer -->
   
   <!-- <script src="./app.js"></script> -->
-
-  <script type="text/javascript">
-    function thuan() {
-      swal("dadsd");
+  <script>
+    function myFunction() {
+      document.getElementById("demo").style.color = "red";
     }
-  </script>
+    </script>
+  
 </body>
 
 </html>
